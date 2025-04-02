@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">SK</a></div>
+            <div class="nav-links">
+                <a href="#" id="about-link">About</a>
+                <button id="theme-toggle" title="Toggle dark/light mode">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery-container">
+            <!-- Images will be loaded here -->
+        </div>
+    </main>
+
+    <!-- About Modal Structure -->
+    <div id="about-overlay" class="modal-overlay">
+        <div id="about-modal" class="modal">
+            <button id="close-modal" class="close-button">&times;</button>
+            <h2>About the Artist</h2>
+            <div class="modal-content about-content">
+                <div class="profile-image-container">
+                    <img src="placeholder-momo.jpg" alt="Placeholder image of Momo from The Apothecary Diaries" class="profile-pic">
+                    <p class="image-note">Please replace 'placeholder-momo.jpg' with the actual image path/URL.</p>
+                </div>
+                <div class="bio">
+                    <h3>SK - Visionary 3D Artist</h3>
+                    <p>Welcome! I'm SK, a digital sculptor painting with pixels and polygons. My world is one of vibrant textures, impossible architectures, and characters that breathe digital life. Inspired by both the surreal and the hyperreal, I strive to create immersive 3D experiences that challenge perception and evoke emotion.</p>
+                    <p>With a background in traditional sculpting and a passion for cutting-edge technology, I blend techniques to forge unique visual narratives. From stylized character models echoing anime aesthetics to sprawling, atmospheric environments, my work explores the boundaries between fantasy and reality.</p>
+                    <p>This gallery is a curated collection of my personal projects and explorations. Dive in and discover the stories whispered by vertices and the dreams rendered in polygons.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> SK. Images from <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash.com</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
